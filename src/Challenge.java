@@ -20,12 +20,11 @@ public class Challenge {
 
     }
 
-
+  // Metodo corto utilizando sort()
   public static Integer  secondSmallest(Integer[] challenge){
       if(challenge.length <= 1){
         return null;
       }
-
       Arrays.sort(challenge);
       for(int i = 0; i < challenge.length -1; i++){
         if (challenge[i] != challenge[i+1]){
@@ -34,6 +33,7 @@ public class Challenge {
       }
       return null;
     }
+
 
     //Función larga para obtener el segundo menor valor del array
     public static Integer  secondSmallest2(Integer[] challenge){
